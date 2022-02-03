@@ -34,7 +34,16 @@ namespace note_pad
             {
                 foreach (string file in files)
                 {
-                    NotesListCB.Items.Add(file.Remove(0, (@"accounts\" + UserName + @"\").Length));
+                    
+                    string name = (file.Remove(0, (@"accounts\" + UserName + @"\").Length));
+                    char[] tempname = name.ToArray();
+                    Array.Reverse(tempname);
+                    name = new string(tempname);
+                    name = name.Remove(0, ".Encrypted".Length);
+                    char[] tempname2 = name.Reverse().ToArray();
+                    name = new string(tempname2);
+                    NotesListCB.Items.Add(name);
+
                 }
                 NotesListCB.SelectedIndex = 0;
             }
@@ -78,13 +87,13 @@ namespace note_pad
                 #region removing .Encrypted From string
 
                 string file = NotesListCB.SelectedItem.ToString();
-                char[] tempfilearray = file.ToCharArray();
-                Array.Reverse(tempfilearray);
-                file = new string(tempfilearray);
-                file = file.Remove(0, ".Encrypted".Length);
-                char[] tempfilearray2 = file.ToCharArray();
-                Array.Reverse(tempfilearray2);
-                file = new string(tempfilearray2);
+                //char[] tempfilearray = file.ToCharArray();
+                //Array.Reverse(tempfilearray);
+                //file = new string(tempfilearray);
+                //file = file.Remove(0, ".Encrypted".Length);
+                //char[] tempfilearray2 = file.ToCharArray();
+                //Array.Reverse(tempfilearray2);
+                //file = new string(tempfilearray2);
 
                 #endregion
                 Edit_Note.UserName = UserName;
