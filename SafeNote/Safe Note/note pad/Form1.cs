@@ -108,7 +108,7 @@ namespace note_pad
                         LoginBTN_Click(sender, e);
                         #endregion
                     }
-                    else MessageBox.Show("This Account doesn't exist");
+                    else MessageBox.Show("This Account already exist");
                     #endregion
 
                 }

@@ -51,7 +51,13 @@ namespace note_pad
             {
                 NotesListCB.Text = "No note found";
                 NotesListCB.Enabled = false;
-                MessageBox.Show("Your account does not hold any notes.");
+                DialogResult result = MessageBox.Show("Your account does not hold any notes. would you like to close this tab?", "Close page", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    
+                    quit();
+                }
+
             }
             
         }
