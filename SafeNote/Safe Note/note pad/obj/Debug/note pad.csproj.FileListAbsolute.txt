@@ -1,0 +1,25 @@
+D:\arash\poroge\note pad\note pad\bin\Debug\note pad.exe.config
+D:\arash\poroge\note pad\note pad\bin\Debug\note pad.exe
+D:\arash\poroge\note pad\note pad\bin\Debug\note pad.pdb
+D:\arash\poroge\note pad\note pad\obj\Debug\note pad.csprojResolveAssemblyReference.cache
+D:\arash\poroge\note pad\note pad\obj\Debug\note_pad.Form1.resources
+D:\arash\poroge\note pad\note pad\obj\Debug\note_pad.Properties.Resources.resources
+D:\arash\poroge\note pad\note pad\obj\Debug\note pad.csproj.GenerateResource.Cache
+D:\arash\poroge\note pad\note pad\obj\Debug\note pad.exe
+D:\arash\poroge\note pad\note pad\obj\Debug\note pad.pdb
+D:\arash\poroge\note pad\note pad\obj\Debug\note_pad.Form2.resources
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\bin\Debug\note pad.exe.config
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\bin\Debug\note pad.exe
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\bin\Debug\note pad.pdb
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note pad.csproj.AssemblyReference.cache
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note pad.csproj.SuggestedBindingRedirects.cache
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note_pad.Properties.Resources.resources
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note pad.csproj.GenerateResource.cache
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note pad.csproj.CoreCompileInputs.cache
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note pad.exe
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note pad.pdb
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note_pad.LoginForm.resources
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note_pad.Load_Or_New_Note_Form.resources
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note_pad.Load_Note_Form.resources
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note_pad.New_Note_Form.resources
+C:\Users\khati\Desktop\ProjectKharazmi\note pad\note pad\obj\Debug\note_pad.Edit_Note.resources
