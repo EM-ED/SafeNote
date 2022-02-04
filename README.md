@@ -5,8 +5,7 @@ ________________________________________________________________________________
 technical info:
 This application Stores your Master Password encrypted using MD5 one-way hash algorithm.
 and it takes advantage of TripleDES in order to store your text
-This is an app written in C# on top of the .Net Platform 
+This is an app written in C# on top of the .Net Core Platform 
 _____________________________________________________________________________________________
 Authors:
 This application is being Developed by Parsa Khatibzadeh(Back-End) & Arash Hajibeyki(Front-End)
-
