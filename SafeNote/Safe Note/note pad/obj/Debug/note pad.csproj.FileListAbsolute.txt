@@ -38,3 +38,16 @@ C:\Users\khati\Desktop\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.Gen
 C:\Users\khati\Desktop\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.CoreCompileInputs.cache
 C:\Users\khati\Desktop\SafeNote\Safe Note\note pad\obj\Debug\note pad.exe
 C:\Users\khati\Desktop\SafeNote\Safe Note\note pad\obj\Debug\note pad.pdb
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.exe.config
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.exe
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.pdb
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.exe
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.pdb
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csprojResolveAssemblyReference.cache
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Edit_Note.resources
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.LoginForm.resources
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Load_Note_Form.resources
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Load_Or_New_Note_Form.resources
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.New_Note_Form.resources
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Properties.Resources.resources
+D:\arash\poroge\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.GenerateResource.Cache
