@@ -39,9 +39,10 @@ namespace note_pad
                 UserNamesCB.Text = "Select Username";
             }
             else UserNamesCB.Hide();
-            
+
             #endregion
             #endregion
+
         }
         private void LoginBTN_Click(object sender, EventArgs e)
         { 
@@ -80,6 +81,7 @@ namespace note_pad
                 }
                 else MessageBox.Show("User Name can only contain letters and numbers");
                 #endregion
+
             }
             else MessageBox.Show("Please Write and username and a password");
 
