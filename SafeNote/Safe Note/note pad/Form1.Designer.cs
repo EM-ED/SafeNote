@@ -41,16 +41,16 @@
             // userTB
             // 
             this.userTB.BackColor = System.Drawing.Color.White;
-            this.userTB.Location = new System.Drawing.Point(103, 29);
+            this.userTB.Location = new System.Drawing.Point(91, 29);
             this.userTB.Name = "userTB";
-            this.userTB.Size = new System.Drawing.Size(272, 22);
+            this.userTB.Size = new System.Drawing.Size(295, 22);
             this.userTB.TabIndex = 0;
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(103, 94);
+            this.passwordTB.Location = new System.Drawing.Point(91, 96);
             this.passwordTB.Name = "passwordTB";
-            this.passwordTB.Size = new System.Drawing.Size(272, 22);
+            this.passwordTB.Size = new System.Drawing.Size(295, 22);
             this.passwordTB.TabIndex = 2;
             // 
             // label1
@@ -58,7 +58,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
-            this.label1.Location = new System.Drawing.Point(15, 31);
+            this.label1.Location = new System.Drawing.Point(3, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 3;
@@ -69,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
-            this.label2.Location = new System.Drawing.Point(15, 96);
+            this.label2.Location = new System.Drawing.Point(3, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 4;
@@ -83,7 +83,7 @@
             this.LoginBTN.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBTN.Image = ((System.Drawing.Image)(resources.GetObject("LoginBTN.Image")));
             this.LoginBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LoginBTN.Location = new System.Drawing.Point(239, 131);
+            this.LoginBTN.Location = new System.Drawing.Point(250, 131);
             this.LoginBTN.Name = "LoginBTN";
             this.LoginBTN.Size = new System.Drawing.Size(136, 55);
             this.LoginBTN.TabIndex = 5;
@@ -100,7 +100,7 @@
             this.SignUpBTN.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpBTN.Image = ((System.Drawing.Image)(resources.GetObject("SignUpBTN.Image")));
             this.SignUpBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SignUpBTN.Location = new System.Drawing.Point(97, 131);
+            this.SignUpBTN.Location = new System.Drawing.Point(91, 131);
             this.SignUpBTN.Name = "SignUpBTN";
             this.SignUpBTN.Size = new System.Drawing.Size(136, 55);
             this.SignUpBTN.TabIndex = 6;
@@ -124,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(387, 213);
+            this.ClientSize = new System.Drawing.Size(405, 213);
             this.Controls.Add(this.UserNamesCB);
             this.Controls.Add(this.SignUpBTN);
             this.Controls.Add(this.LoginBTN);

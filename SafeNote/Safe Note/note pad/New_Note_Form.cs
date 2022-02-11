@@ -23,6 +23,7 @@ namespace note_pad
         bool ChangesSaved = false;
         string[] tempPresentFiles = Directory.GetFiles(@"accounts\" + UserName + @"\");
         List<string> PresentFiles = new List<string>();
+        private string savedFileName = string.Empty;
 
         private void New_Note_Form_Load(object sender, EventArgs e)
         {
@@ -38,10 +39,15 @@ namespace note_pad
             {
                 if (ChangesSaved) return;
 
-                if (!PresentFiles.Contains(NameTB.Text + ".Encrypted"))
+                if (!PresentFiles.Contains(NameTB.Text + ".Encrypted"))//checks if file alaready exists
                 {
+                    // "if" statement below will delete the previous file if file name is changed
+                    if(savedFileName != string.Empty && NameTB.Text + ".Encrypted" != savedFileName) File.Delete(@"accounts\" + UserName + @"\" + savedFileName);
                     Security.SaveAndEncrypt(NameTB.Text, DataTB.Text, UserName, Password);
                     ChangesSaved = true;
+
+
+                    savedFileName = NameTB.Text + ".Encrypted";
                 }
                 else
                 {
@@ -75,7 +81,7 @@ namespace note_pad
                 }
                 else MessageBox.Show("You have not saved this file yet!");
             }
-            else QuitBTN_Click(sender, e);
+            else quit();
         }
 
         private void QuitBTN_Click(object sender, EventArgs e)

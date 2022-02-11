@@ -90,6 +90,7 @@
             this.DataTB.Location = new System.Drawing.Point(32, 50);
             this.DataTB.Multiline = true;
             this.DataTB.Name = "DataTB";
+            this.DataTB.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DataTB.Size = new System.Drawing.Size(655, 253);
             this.DataTB.TabIndex = 2;
             this.DataTB.TextChanged += new System.EventHandler(this.DataTB_TextChanged);

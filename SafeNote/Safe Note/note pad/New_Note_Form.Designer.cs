@@ -75,6 +75,7 @@
             this.DataTB.Location = new System.Drawing.Point(14, 70);
             this.DataTB.Multiline = true;
             this.DataTB.Name = "DataTB";
+            this.DataTB.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DataTB.Size = new System.Drawing.Size(746, 247);
             this.DataTB.TabIndex = 2;
             this.DataTB.TextChanged += new System.EventHandler(this.DataTB_TextChanged);
