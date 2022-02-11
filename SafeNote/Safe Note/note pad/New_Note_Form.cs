@@ -36,28 +36,30 @@ namespace note_pad
         {
             if (DataTB.Text != string.Empty && NameTB.Text != string.Empty)
             {
-                if (!ChangesSaved)
+                if (ChangesSaved) return;
+
+                if (!PresentFiles.Contains(NameTB.Text + ".Encrypted"))
                 {
-                    if (!PresentFiles.Contains(NameTB.Text + ".Encrypted"))
+                    Security.SaveAndEncrypt(NameTB.Text, DataTB.Text, UserName, Password);
+                    ChangesSaved = true;
+                }
+                else
+                {
+                    string message = "This File Already Exist Do You Want To OverWrite The Existing File?";
+                    string Title = "Do you want to overwrite?";
+                    DialogResult result = MessageBox.Show(message, Title, MessageBoxButtons.YesNo);
+                    if (result == DialogResult.Yes)
                     {
+                        File.Delete(@"accounts\" + UserName + @"\" + NameTB.Text + ".Encrypted");
                         Security.SaveAndEncrypt(NameTB.Text, DataTB.Text, UserName, Password);
                         ChangesSaved = true;
+                        PresentFiles.Remove(NameTB.Text + ".Encrypted");
                     }
-                    else
-                    {
-                        string message = "This File Already Exist Do You Want To OverWrite The Existing File?";
-                        string Title = "Do you want to overwrite?";
-                        DialogResult result = MessageBox.Show(message, Title, MessageBoxButtons.YesNo);
-                        if (result == DialogResult.Yes)
-                        {
-                            File.Delete(@"accounts\" + UserName + @"\" + NameTB.Text + ".Encrypted");
-                            Security.SaveAndEncrypt(NameTB.Text, DataTB.Text, UserName, Password);
-                            ChangesSaved = true;
-                            PresentFiles.Remove(NameTB.Text + ".Encrypted");
-                        }
 
-                    }
                 }
+
+
+
             }
             else MessageBox.Show("Please choose a Name for the note and Don't leave the note empty");
         }
@@ -143,6 +145,16 @@ namespace note_pad
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void NameTB_TextChanged(object sender, EventArgs e)
+        {
+            ChangesSaved = false;
+        }
+
+        private void DataTB_TextChanged(object sender, EventArgs e)
+        {
+            ChangesSaved = false;
         }
     }
 }

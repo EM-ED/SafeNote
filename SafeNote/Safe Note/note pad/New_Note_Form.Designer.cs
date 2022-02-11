@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_Note_Form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.NameTB = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.DataTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SaveBTN = new System.Windows.Forms.Button();
             this.DeleteBTN = new System.Windows.Forms.Button();
@@ -58,24 +58,14 @@
             // 
             this.NameTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(55)))), ((int)(((byte)(83)))));
             this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NameTB.Font = new System.Drawing.Font("B Titr", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.NameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.NameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
             this.NameTB.Location = new System.Drawing.Point(124, 27);
             this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(636, 32);
+            this.NameTB.Size = new System.Drawing.Size(636, 21);
             this.NameTB.TabIndex = 1;
             this.NameTB.Text = "New note";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
-            this.label2.Location = new System.Drawing.Point(121, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "__________________________________";
+            this.NameTB.TextChanged += new System.EventHandler(this.NameTB_TextChanged);
             // 
             // DataTB
             // 
@@ -87,6 +77,18 @@
             this.DataTB.Name = "DataTB";
             this.DataTB.Size = new System.Drawing.Size(746, 247);
             this.DataTB.TabIndex = 2;
+            this.DataTB.TextChanged += new System.EventHandler(this.DataTB_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
+            this.label2.Location = new System.Drawing.Point(121, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(245, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "__________________________________";
             // 
             // label1
             // 
