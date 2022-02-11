@@ -39,16 +39,6 @@ namespace note_pad
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void label1_MouseClick(object sender, MouseEventArgs e)
         {
             splitContainer1_Panel1_MouseClick(sender, e);
@@ -63,15 +53,15 @@ namespace note_pad
         {
             Application.Exit();
         }
-
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-
+            splitContainer1_Panel2_MouseClick(sender, (MouseEventArgs)e);
         }
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-
+            splitContainer1_Panel1_MouseClick(sender, (MouseEventArgs)e);
         }
+
     }
 }

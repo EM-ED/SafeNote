@@ -51,7 +51,6 @@
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
             this.splitContainer1.Panel1.Controls.Add(this.label4);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             this.splitContainer1.Panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.splitContainer1_Panel1_MouseClick);
             // 
             // splitContainer1.Panel2
@@ -59,7 +58,6 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(129)))), ((int)(((byte)(109)))));
             this.splitContainer1.Panel2.Controls.Add(this.label3);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Panel2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.splitContainer1_Panel2_MouseClick);
             this.splitContainer1.Size = new System.Drawing.Size(826, 450);
             this.splitContainer1.SplitterDistance = 395;
@@ -74,6 +72,7 @@
             this.label4.Size = new System.Drawing.Size(183, 194);
             this.label4.TabIndex = 1;
             this.label4.Text = " ";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -85,7 +84,6 @@
             this.label1.Size = new System.Drawing.Size(294, 78);
             this.label1.TabIndex = 0;
             this.label1.Text = "new note";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label1_MouseClick);
             // 
             // label3
@@ -95,6 +93,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(207, 166);
             this.label3.TabIndex = 2;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -105,7 +104,6 @@
             this.label2.Size = new System.Drawing.Size(301, 78);
             this.label2.TabIndex = 1;
             this.label2.Text = "load note";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             this.label2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label2_MouseClick);
             // 
             // Load_Or_New_Note_Form
@@ -115,7 +113,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(826, 450);
             this.Controls.Add(this.splitContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Load_Or_New_Note_Form";

@@ -51,10 +51,9 @@ namespace note_pad
             {
                 NotesListCB.Text = "No note found";
                 NotesListCB.Enabled = false;
-                DialogResult result = MessageBox.Show("Your account does not hold any notes. would you like to close this tab?", "Close page", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
+                DialogResult result = MessageBox.Show("Your account does not hold any notes.do you want to open this form?", "Close page", MessageBoxButtons.YesNo);
+                if (result != DialogResult.Yes)
                 {
-                    
                     quit();
                 }
 
@@ -63,10 +62,6 @@ namespace note_pad
         }
         private void quit()
         {
-            Load_Or_New_Note_Form LONNF = new Load_Or_New_Note_Form();
-            Load_Or_New_Note_Form.UserName=UserName;
-            Load_Or_New_Note_Form.Password=Password;
-            LONNF.Show();
             this.Close();
         }
 

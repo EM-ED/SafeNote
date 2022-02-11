@@ -31,6 +31,7 @@ namespace note_pad
             {
                 PresentFiles.Add(file.Remove(0, (@"accounts\" + UserName + @"\").Length));
             }
+            savedFileName = string.Empty;
         }
 
         private void SaveBTN_Click(object sender, EventArgs e)
@@ -72,16 +73,16 @@ namespace note_pad
 
         private void DeleteBTN_Click(object sender, EventArgs e)
         {
-            if (File.Exists(@"accounts\" + UserName + @"\" + NameTB.Text + ".Encrypted"))
+            if (savedFileName == string.Empty)
             {
-                if (!PresentFiles.Contains(NameTB.Text + ".Encrypted"))
-                {
-                    File.Delete(@"accounts\" + UserName + @"\" + NameTB.Text + ".Encrypted");
-                    QuitBTN_Click(sender, e);
-                }
-                else MessageBox.Show("You have not saved this file yet!");
+                MessageBox.Show("You haven't saved a file yet");
+                return;
             }
-            else quit();
+            File.Delete(@"accounts\" + UserName + @"\" + savedFileName);
+            savedFileName = string.Empty;
+            ChangesSaved = true;// this is so the program doesn't ask you if you want to save your changes
+            quit();
+
         }
 
         private void QuitBTN_Click(object sender, EventArgs e)
@@ -142,9 +143,7 @@ namespace note_pad
                 {
                     SaveBTN_Click(sender, e);
                 }
-                else
-                {
-                }
+
             }
         }
 
