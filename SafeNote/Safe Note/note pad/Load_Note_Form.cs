@@ -74,7 +74,7 @@ namespace note_pad
         {
             if(NotesListCB.Items.Count > 0)
             {
-                File.Delete(@"accounts\" + UserName + @"\" + NotesListCB.SelectedItem.ToString());
+                File.Delete(@"accounts\" + UserName + @"\" + NotesListCB.SelectedItem.ToString()+ ".Encrypted");
                 NotesListCB.Items.Remove(NotesListCB.SelectedItem);
                 if(NotesListCB.Items.Count == 0)
                 {
@@ -93,13 +93,6 @@ namespace note_pad
                 #region removing .Encrypted From string
 
                 string file = NotesListCB.SelectedItem.ToString();
-                //char[] tempfilearray = file.ToCharArray();
-                //Array.Reverse(tempfilearray);
-                //file = new string(tempfilearray);
-                //file = file.Remove(0, ".Encrypted".Length);
-                //char[] tempfilearray2 = file.ToCharArray();
-                //Array.Reverse(tempfilearray2);
-                //file = new string(tempfilearray2);
 
                 #endregion
                 Edit_Note.UserName = UserName;

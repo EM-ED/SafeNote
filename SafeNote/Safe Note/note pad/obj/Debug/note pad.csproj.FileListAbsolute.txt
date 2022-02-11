@@ -66,3 +66,18 @@ C:\Users\khati\Desktop\SafeNote3\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\
 C:\Users\khati\Desktop\SafeNote3\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.exe.config
 C:\Users\khati\Desktop\SafeNote3\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.exe
 C:\Users\khati\Desktop\SafeNote3\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.pdb
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.exe.config
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.exe
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.pdb
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.AssemblyReference.cache
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.SuggestedBindingRedirects.cache
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Edit_Note.resources
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.LoginForm.resources
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Load_Note_Form.resources
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Load_Or_New_Note_Form.resources
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.New_Note_Form.resources
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note_pad.Properties.Resources.resources
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.GenerateResource.cache
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.CoreCompileInputs.cache
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.exe
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.pdb
