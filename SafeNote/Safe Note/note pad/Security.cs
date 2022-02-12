@@ -68,25 +68,24 @@ namespace note_pad
                 return key.ToArray();
             }
         }
-        public static string MD5HashWithSalt(string input, string salt) //Retruns a String containing The hashed data in hexadecimal
+        public static string SHA256HashWithSalt(string input, string salt) //Retruns a String containing The hashed data in hexadecimal
         {
-
-
-            #region Hashing
-            byte[] TmpInput = ASCIIEncoding.ASCII.GetBytes(input + salt);
-            byte[] TmpHash = new MD5CryptoServiceProvider().ComputeHash(TmpInput);
+            #region genereting needed Objects
+            StringBuilder SB = new StringBuilder();
+            SHA256 sha256 = SHA256.Create();
+            Encoding encoding = Encoding.UTF8;
             #endregion
-            #region Converting it to Hexadecimal
-            int i = 0;
-            string resault = "";
-            for (i = 0; i < TmpHash.Length; i++)
+            #region Hashing
+            byte[] hashedBytes = sha256.ComputeHash(encoding.GetBytes(input+salt));
+            #endregion
+            sha256.Dispose();
+            #region Turning it to hexadecimald
+            foreach (byte b in hashedBytes)
             {
-                resault += (TmpHash[i].ToString("X2"));
+                SB.Append(b.ToString("x2"));
             }
             #endregion
-            return resault;
-
-
+            return SB.ToString();
         }
         #endregion
         public static void SaveAndEncrypt(string Name, string input, string UserName, string Password)

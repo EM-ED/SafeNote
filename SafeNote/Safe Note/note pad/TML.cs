@@ -127,26 +127,6 @@ namespace LBFML
                 WriteToFile(Path + @"\" + fileName, line, false);
             }
         }
-        public static string MD5HashWithSalt(string input, string salt) //Retruns a String containing The hashed data in hexadecimal
-        {
-
-
-            #region Hashing
-            byte[] TmpInput = ASCIIEncoding.ASCII.GetBytes(input + salt);
-            byte[] TmpHash = new MD5CryptoServiceProvider().ComputeHash(TmpInput);
-            #endregion
-            #region Converting it to Hexadecimal
-            int i = 0;
-            string resault = "";
-            for (i = 0; i < TmpHash.Length; i++)
-            {
-                resault += (TmpHash[i].ToString("X2"));
-            }
-            #endregion
-            return resault;
-
-
-        }
 
 
 

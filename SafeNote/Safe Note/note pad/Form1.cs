@@ -60,7 +60,7 @@ namespace note_pad
                     {
                         Data LoginFolder = new Data(Directory_: @"accounts\" + userTB.Text);
                         #region Comparing the Hashes
-                        string TempHash = LBFML.Data.MD5HashWithSalt(passwordTB.Text, userTB.Text);
+                        string TempHash = Security.SHA256HashWithSalt(passwordTB.Text, userTB.Text);
                         string CorrectHash = LoginFolder.ReadFile("Password.pass");
                         if (CorrectHash == TempHash)
                         {
@@ -104,7 +104,7 @@ namespace note_pad
                         //makes a folder by the name of the username then saves the password using MD5 Hashing protc and the username as teh salt
                         Data LoginFolder = new Data(Directory_: @"accounts\" + userTB.Text);
                         LoginFolder.CreateFile("Password.pass");
-                        LoginFolder.WriteToFile("Password.pass", LBFML.Data.MD5HashWithSalt(passwordTB.Text, userTB.Text));
+                        LoginFolder.WriteToFile("Password.pass", Security.SHA256HashWithSalt(passwordTB.Text, userTB.Text));
                         #endregion
                         #region Login Process
                         LoginBTN_Click(sender, e);
