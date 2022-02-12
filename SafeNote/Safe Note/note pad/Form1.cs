@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using LBFML;
+using System;
 using System.IO;
-using LBFML;
+using System.Linq;
+using System.Windows.Forms;
 
 
 namespace note_pad
@@ -17,17 +11,17 @@ namespace note_pad
     {
 
         Load_Or_New_Note_Form f2 = new Load_Or_New_Note_Form();
-         
+
         public LoginForm()
         {
-            
+
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             #region adding the usernames to usernames list box
             #region Checking if It's not a first time lunch
-            if (Directory.Exists(@"accounts\") && Directory.GetDirectories(@"accounts\").Count()>0)
+            if (Directory.Exists(@"accounts\") && Directory.GetDirectories(@"accounts\").Count() > 0)
             {
                 #region Loading the usernames
                 string[] UsernameList = Directory.GetDirectories(@"accounts\");
@@ -45,9 +39,9 @@ namespace note_pad
 
         }
         private void LoginBTN_Click(object sender, EventArgs e)
-        { 
+        {
             //making sure both TBs are filled
-            if(passwordTB.Text != String.Empty && userTB.Text != String.Empty)
+            if (passwordTB.Text != String.Empty && userTB.Text != String.Empty)
             {
                 //making sure the username TB contains the allowed characters
                 #region Checking for banned characters
@@ -122,7 +116,7 @@ namespace note_pad
             else MessageBox.Show("Please Write and username and a password");
         }
 
-               
+
 
         private void UserNamesCB_SelectedIndexChanged(object sender, EventArgs e)
         {

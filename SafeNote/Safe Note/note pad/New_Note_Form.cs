@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
- 
+using System.Windows.Forms;
+
 
 namespace note_pad
 {
@@ -43,7 +37,7 @@ namespace note_pad
                 if (!PresentFiles.Contains(NameTB.Text + ".Encrypted"))//checks if file alaready exists
                 {
                     // "if" statement below will delete the previous file if file name is changed
-                    if(savedFileName != string.Empty && NameTB.Text + ".Encrypted" != savedFileName) File.Delete(@"accounts\" + UserName + @"\" + savedFileName);
+                    if (savedFileName != string.Empty && NameTB.Text + ".Encrypted" != savedFileName) File.Delete(@"accounts\" + UserName + @"\" + savedFileName);
                     Security.SaveAndEncrypt(NameTB.Text, DataTB.Text, UserName, Password);
                     ChangesSaved = true;
 

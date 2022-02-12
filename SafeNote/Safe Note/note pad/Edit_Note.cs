@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using LBFML;
 using System.IO;
+using System.Windows.Forms;
 
 namespace note_pad
 {
@@ -35,12 +27,12 @@ namespace note_pad
         {
             Load_Or_New_Note_Form LONNF = new Load_Or_New_Note_Form();
             NameTB.Text = FileName;
-            DataTB.Text = Security.LoadAndDecrypt(FileName,UserName,Password);
+            DataTB.Text = Security.LoadAndDecrypt(FileName, UserName, Password);
         }
 
         private void SaveBTN_Click(object sender, EventArgs e)
         {
-            if(DataTB.Text != String.Empty && NameTB.Text != string.Empty)
+            if (DataTB.Text != String.Empty && NameTB.Text != string.Empty)
             {
                 if (NameTB.Text == FileName)
                 {
@@ -48,7 +40,7 @@ namespace note_pad
                     FilePath = @"accounts\" + UserName + @"\" + NameTB.Text + ".Encrypted";
                     File.Delete(FilePath);
                     Security.SaveAndEncrypt(FileName, DataTB.Text, UserName, Password);
-                    UnsavedChnage=false;
+                    UnsavedChnage = false;
                 }
                 else
                 {
@@ -82,9 +74,9 @@ namespace note_pad
                 }
             }
             else { MessageBox.Show("Please choose a name for the note and don't leave the note empty"); }
-                
 
-                
+
+
         }
 
         private void DeleteBTN_Click(object sender, EventArgs e)
@@ -95,8 +87,8 @@ namespace note_pad
 
         private void QuitBTN_Click(object sender, EventArgs e)
         {
-            
-            if(UnsavedChnage==true)
+
+            if (UnsavedChnage == true)
             {
                 string message = "You have some unsaved progress. would you like to save them first and then quit";
                 string Title = "Do you want to save?";

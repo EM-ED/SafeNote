@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using LBFML;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace note_pad
 {
@@ -24,17 +18,17 @@ namespace note_pad
         private void Load_Note_Form_Load(object sender, EventArgs e)
         {
             //Data DataFolder = new Data(@"accounts\" + UserName);
-            List<string> files = Directory.GetFiles(@"accounts\" + UserName +@"\").ToList();
+            List<string> files = Directory.GetFiles(@"accounts\" + UserName + @"\").ToList();
 
 
             files.Remove(@"accounts\" + UserName + @"\" + "Password.pass");
 
-            
+
             if (files.Count > 0)
             {
                 foreach (string file in files)
                 {
-                    
+
                     string name = (file.Remove(0, (@"accounts\" + UserName + @"\").Length));
                     char[] tempname = name.ToArray();
                     Array.Reverse(tempname);
@@ -58,7 +52,7 @@ namespace note_pad
                 }
 
             }
-            
+
         }
         private void quit()
         {
@@ -67,13 +61,13 @@ namespace note_pad
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            if(NotesListCB.Items.Count > 0)
+            if (NotesListCB.Items.Count > 0)
             {
-                File.Delete(@"accounts\" + UserName + @"\" + NotesListCB.SelectedItem.ToString()+ ".Encrypted");
+                File.Delete(@"accounts\" + UserName + @"\" + NotesListCB.SelectedItem.ToString() + ".Encrypted");
                 NotesListCB.Items.Remove(NotesListCB.SelectedItem);
-                if(NotesListCB.Items.Count == 0)
+                if (NotesListCB.Items.Count == 0)
                 {
-                    NotesListCB.Enabled=false;
+                    NotesListCB.Enabled = false;
                     NotesListCB.Text = "Your account does not hold any notes.";
                 }
                 else NotesListCB.SelectedIndex = 0;
@@ -109,7 +103,7 @@ namespace note_pad
             Load_Or_New_Note_Form.Password = Password;
             Load_Or_New_Note_Form LONNF = new Load_Or_New_Note_Form();
             Edit_Note EN = new Edit_Note();
-            if(ShouldOpenChoiceForm) LONNF.Show();
+            if (ShouldOpenChoiceForm) LONNF.Show();
 
 
 

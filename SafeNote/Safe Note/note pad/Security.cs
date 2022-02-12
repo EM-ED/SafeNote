@@ -1,10 +1,9 @@
-﻿using System;
+﻿using LBFML;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Security.Cryptography;
-using LBFML;
+using System.Text;
 
 namespace note_pad
 {
@@ -47,21 +46,21 @@ namespace note_pad
         {
             int passwordSize = UTF8Encoding.UTF8.GetByteCount(password);
             List<byte> key = UTF8Encoding.UTF8.GetBytes(password).ToList();
-            if(passwordSize == 16) return key.ToArray();
-            else if(passwordSize > 16)
+            if (passwordSize == 16) return key.ToArray();
+            else if (passwordSize > 16)
             {
                 int extraBytes = passwordSize - 16;
-                for(int i = 0; i < extraBytes; i++)
+                for (int i = 0; i < extraBytes; i++)
                 {
                     key.RemoveAt(16);
                 }
                 return key.ToArray();
             }
-            else 
+            else
             {
                 int neededBytes = 16 - passwordSize;
                 Stack<byte> FixedCharactyers = new Stack<byte>(UTF8Encoding.UTF8.GetBytes("ParsaKH__ArashHA"));
-                for(int i = 0;i < neededBytes;i++)
+                for (int i = 0; i < neededBytes; i++)
                 {
                     key.Add(FixedCharactyers.Pop());
                 }
@@ -76,7 +75,7 @@ namespace note_pad
             Encoding encoding = Encoding.UTF8;
             #endregion
             #region Hashing
-            byte[] hashedBytes = sha256.ComputeHash(encoding.GetBytes(input+salt));
+            byte[] hashedBytes = sha256.ComputeHash(encoding.GetBytes(input + salt));
             #endregion
             sha256.Dispose();
             #region Turning it to hexadecimald
@@ -91,7 +90,7 @@ namespace note_pad
         public static void SaveAndEncrypt(string Name, string input, string UserName, string Password)
         {
             #region Generating key
-            byte[] key = KeyGenerator(Password); 
+            byte[] key = KeyGenerator(Password);
             #endregion
             #region Proccessing Data
             string resault = input;
