@@ -81,3 +81,8 @@ C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\n
 C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.CoreCompileInputs.cache
 C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.exe
 C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.pdb
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.exe.manifest
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\note pad.application
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.exe.manifest
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.application
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.TrustInfo.xml
