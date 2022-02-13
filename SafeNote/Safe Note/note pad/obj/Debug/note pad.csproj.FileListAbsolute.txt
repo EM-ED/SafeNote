@@ -86,3 +86,16 @@ C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\n
 C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.exe.manifest
 C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.application
 C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.TrustInfo.xml
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\DeltaCompressionDotNet.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\DeltaCompressionDotNet.MsDelta.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\DeltaCompressionDotNet.PatchApi.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.Rocks.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\SharpCompress.dll
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.pdb
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.Mdb.pdb
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.Pdb.pdb
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\bin\Debug\Mono.Cecil.Rocks.pdb
+C:\Users\khati\Documents\GitHub\SafeNote\SafeNote\Safe Note\note pad\obj\Debug\note pad.csproj.CopyComplete

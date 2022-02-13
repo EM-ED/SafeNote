@@ -36,6 +36,7 @@
             this.LoginBTN = new System.Windows.Forms.Button();
             this.SignUpBTN = new System.Windows.Forms.Button();
             this.UserNamesCB = new System.Windows.Forms.ComboBox();
+            this.DeleteAccountBTN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // userTB
@@ -83,7 +84,7 @@
             this.LoginBTN.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBTN.Image = ((System.Drawing.Image)(resources.GetObject("LoginBTN.Image")));
             this.LoginBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LoginBTN.Location = new System.Drawing.Point(250, 131);
+            this.LoginBTN.Location = new System.Drawing.Point(233, 131);
             this.LoginBTN.Name = "LoginBTN";
             this.LoginBTN.Size = new System.Drawing.Size(136, 55);
             this.LoginBTN.TabIndex = 5;
@@ -119,12 +120,31 @@
             this.UserNamesCB.TabIndex = 7;
             this.UserNamesCB.SelectedIndexChanged += new System.EventHandler(this.UserNamesCB_SelectedIndexChanged);
             // 
+            // DeleteAccountBTN
+            // 
+            this.DeleteAccountBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(55)))), ((int)(((byte)(83)))));
+            this.DeleteAccountBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DeleteAccountBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteAccountBTN.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteAccountBTN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DeleteAccountBTN.Image = ((System.Drawing.Image)(resources.GetObject("DeleteAccountBTN.Image")));
+            this.DeleteAccountBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.DeleteAccountBTN.Location = new System.Drawing.Point(91, 192);
+            this.DeleteAccountBTN.Name = "DeleteAccountBTN";
+            this.DeleteAccountBTN.Size = new System.Drawing.Size(278, 55);
+            this.DeleteAccountBTN.TabIndex = 8;
+            this.DeleteAccountBTN.Text = "Delete Account";
+            this.DeleteAccountBTN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteAccountBTN.UseVisualStyleBackColor = false;
+            this.DeleteAccountBTN.Click += new System.EventHandler(this.DeleteAccountBTN_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(405, 213);
+            this.ClientSize = new System.Drawing.Size(430, 256);
+            this.Controls.Add(this.DeleteAccountBTN);
             this.Controls.Add(this.UserNamesCB);
             this.Controls.Add(this.SignUpBTN);
             this.Controls.Add(this.LoginBTN);
@@ -153,6 +173,7 @@
         private System.Windows.Forms.Button LoginBTN;
         private System.Windows.Forms.Button SignUpBTN;
         private System.Windows.Forms.ComboBox UserNamesCB;
+        private System.Windows.Forms.Button DeleteAccountBTN;
     }
 }
 

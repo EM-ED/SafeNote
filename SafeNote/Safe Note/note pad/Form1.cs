@@ -113,7 +113,7 @@ namespace note_pad
 
 
             }
-            else MessageBox.Show("Please Write and username and a password");
+            else MessageBox.Show("Please Write an username and a password");
         }
 
 
@@ -121,6 +121,53 @@ namespace note_pad
         private void UserNamesCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             userTB.Text = UserNamesCB.SelectedItem.ToString();
+        }
+        private void DeleteAccountBTN_Click(object sender, EventArgs e)
+        {
+            string username = userTB.Text;
+            if (passwordTB.Text == String.Empty || userTB.Text == String.Empty)
+            {
+                MessageBox.Show("Please write an username and a password");
+                return;
+            }
+            //making sure the username TB contains the allowed characters
+            #region Checking for banned characters
+
+            if (!username.All(char.IsLetterOrDigit))
+            {
+                MessageBox.Show("UserName can only contain numbers and letters");
+                return;
+            }
+            #endregion
+            #region Checking if user exists
+            if (!Directory.Exists(@"accounts\" + userTB.Text))
+            {
+                MessageBox.Show("User Does not exist");
+                return;
+            }
+            #endregion
+            Data LoginFolder = new Data(Directory_: @"accounts\" + userTB.Text);
+            #region Comparing the Hashes
+            string TempHash = Security.SHA256HashWithSalt(passwordTB.Text, userTB.Text);
+            string CorrectHash = LoginFolder.ReadFile("Password.pass");
+            if (CorrectHash == TempHash)
+            {
+            Directory.Delete(@"accounts\" + userTB.Text,true);
+                UserNamesCB.Items.Remove(userTB.Text);
+                if(UserNamesCB.Items.Count>0)
+                {
+                    UserNamesCB.SelectedIndex = 0;
+                }
+                else
+                {
+                    UserNamesCB.Text = "No User Found";
+                    userTB.Text = "";
+                }
+            }
+            else MessageBox.Show("The password is incorrect");
+            #endregion
+
+
         }
     }
 }
