@@ -162,6 +162,7 @@ namespace note_pad
                 {
                     UserNamesCB.Text = "No User Found";
                     userTB.Text = "";
+                    passwordTB.Text = "";
                 }
             }
             else MessageBox.Show("The password is incorrect");
