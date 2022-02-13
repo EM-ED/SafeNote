@@ -45,7 +45,7 @@ namespace note_pad
             {
                 NotesListCB.Text = "No note found";
                 NotesListCB.Enabled = false;
-                DialogResult result = MessageBox.Show("Your account does not hold any notes.do you want to open this form?", "Close page", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show("Your account does not hold any notes. do you want to open this form?", "Close page", MessageBoxButtons.YesNo);
                 if (result != DialogResult.Yes)
                 {
                     quit();

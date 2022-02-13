@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace note_pad
 {
@@ -17,10 +19,23 @@ namespace note_pad
         bool UnsavedChnage = false;
         private void Edit_Note_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Load_Note_Form LNF = new Load_Note_Form();
-            Load_Note_Form.UserName = UserName;
-            Load_Note_Form.Password = Password;
-            LNF.Show();
+            // Checking if user should be redirected to load_Note or Load_Or_new_note
+            List<string> files = Directory.GetFiles(@"accounts\" + UserName + @"\").ToList();
+            if(files.Count > 1)//its "> 1" because the password file is always present
+            {
+                Load_Note_Form LNF = new Load_Note_Form();
+                Load_Note_Form.UserName = UserName;
+                Load_Note_Form.Password = Password;
+                LNF.Show();
+            }
+            else
+            {
+                Load_Or_New_Note_Form LONNF = new Load_Or_New_Note_Form();
+                Load_Or_New_Note_Form.UserName=UserName;
+                Load_Or_New_Note_Form.Password=Password;
+                LONNF.Show();
+            }
+
         }
 
         private void Edit_Note_Load(object sender, EventArgs e)
@@ -41,6 +56,7 @@ namespace note_pad
                     File.Delete(FilePath);
                     Security.SaveAndEncrypt(FileName, DataTB.Text, UserName, Password);
                     UnsavedChnage = false;
+                    MessageBox.Show("Your Changes were Saved successfully");
                 }
                 else
                 {
@@ -56,6 +72,7 @@ namespace note_pad
                             File.Delete(FilePath);
                             Security.SaveAndEncrypt(FileName, DataTB.Text, UserName, Password);
                             UnsavedChnage = false;
+                            MessageBox.Show("Your Changes were Saved successfully");
                         }
                         else
                         {
@@ -69,6 +86,7 @@ namespace note_pad
                         FilePath = @"accounts\" + UserName + @"\" + NameTB.Text + ".Encrypted";
                         Security.SaveAndEncrypt(FileName, DataTB.Text, UserName, Password);
                         UnsavedChnage = false;
+                        MessageBox.Show("Your Changes were Saved successfully");
 
                     }
                 }
@@ -81,8 +99,15 @@ namespace note_pad
 
         private void DeleteBTN_Click(object sender, EventArgs e)
         {
-            File.Delete(FilePath);
-            this.Close();
+            string message = "Are you sure that you want to delete this file?";
+            string Title = "Do you want to delete?";
+            DialogResult result = MessageBox.Show(message, Title, MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                File.Delete(FilePath);
+                this.Close();
+            }
+
         }
 
         private void QuitBTN_Click(object sender, EventArgs e)

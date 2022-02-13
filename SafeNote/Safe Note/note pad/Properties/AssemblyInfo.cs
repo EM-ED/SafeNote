@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("note pad")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Safe Note")]
+[assembly: AssemblyDescription("Save Your Text Safely")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("note pad")]
+[assembly: AssemblyProduct("Safe Note")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

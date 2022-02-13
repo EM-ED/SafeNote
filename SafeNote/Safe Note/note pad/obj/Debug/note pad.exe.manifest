@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="note pad.exe" size="253920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="note pad.exe" size="254432">
       <assemblyIdentity name="note pad" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>niys4f8UnEE7wHDkEzAQfBY12iCE9y4ma2v9XxcXcZY=</dsig:DigestValue>
+        <dsig:DigestValue>UbNegggRGE3bqWjOByM2GhVDK/yFmSe0VMeMtddEiyU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

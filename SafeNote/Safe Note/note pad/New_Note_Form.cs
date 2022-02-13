@@ -43,6 +43,7 @@ namespace note_pad
 
 
                     savedFileName = NameTB.Text + ".Encrypted";
+                    MessageBox.Show("Your Changes were Saved successfully");
                 }
                 else
                 {
@@ -55,6 +56,7 @@ namespace note_pad
                         Security.SaveAndEncrypt(NameTB.Text, DataTB.Text, UserName, Password);
                         ChangesSaved = true;
                         PresentFiles.Remove(NameTB.Text + ".Encrypted");
+                        MessageBox.Show("Your Changes were Saved successfully");
                     }
 
                 }
@@ -72,11 +74,17 @@ namespace note_pad
                 MessageBox.Show("You haven't saved a file yet");
                 return;
             }
-            File.Delete(@"accounts\" + UserName + @"\" + savedFileName);
-            savedFileName = string.Empty;
-            ChangesSaved = true;// this is so the program doesn't ask you if you want to save your changes
-            quit();
-
+            
+            string message = "Are you sure that you want to delete this file?";
+            string Title = "Do you want to delete?";
+            DialogResult result = MessageBox.Show(message, Title, MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                File.Delete(@"accounts\" + UserName + @"\" + savedFileName);
+                savedFileName = string.Empty;
+                ChangesSaved = true;// this is so the program doesn't ask you if you want to save your changes
+                quit();
+            }
         }
 
         private void QuitBTN_Click(object sender, EventArgs e)

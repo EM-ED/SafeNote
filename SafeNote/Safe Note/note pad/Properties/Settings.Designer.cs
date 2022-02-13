@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace note_pad.Properties {
+namespace Safe_Note.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
